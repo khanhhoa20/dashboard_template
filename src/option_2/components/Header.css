@@ -1,0 +1,105 @@
+.header{
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+    inset : 0 85% 0 0; 
+    background-color: #fff;
+    /*
+     position and inset
+    inset is short a shorthand that corresponds to the top, right, bottom, left properties. 
+    The top, right, bottom, and left properties are used to position the element.
+    */
+}
+.header-mobile{
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+    align-items: center;
+    inset: 0 95% 0 0;
+    background-color: #fff;
+}
+nav .ul-item{
+    display: flex;
+    flex-direction: column;
+    margin-block: .5rem;
+    list-style: none;
+}
+
+nav .ul-item.oicon a{
+    display: none;
+}
+nav .ul-item.oicon li::after{
+    content: '';
+    position: absolute;
+    width: 1%;
+    height:4%;
+    background-color: rgb(33, 58, 224);
+    right:0
+}
+nav .ul-item li{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    cursor: pointer;
+    padding-block: 1.2rem;
+    margin-block: .1rem;
+}
+
+nav .ul-item li:hover {
+    background-color:  #cceeff;
+    /* color: #1ab2ff */
+}
+
+
+nav .ul-item li .icon{
+    /* color: #000 */
+    margin-inline: 1rem;
+    font-size:20px
+} 
+
+
+nav .ul-item li a{
+    text-transform: uppercase;
+    text-decoration: none;
+    color : #000;
+    border-left: 1px solid #000;
+    padding-left: 2rem;
+}
+.menu-icon{
+    margin-inline: 1rem
+}
+.menu-icon .menu{
+    /* color */
+    margin-block: 1rem;
+    cursor: pointer;
+    font-size: 20px;
+}
+.menu-icon .close-icon{
+    /* color */
+    margin-block: 1rem;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+/* @media (max-width:900px) {
+    .header-mobile {
+        inset: 0 90% 0 0;
+        justify-content: center;
+    } */
+
+    /* nav .ul-item {
+        display: none;  
+    } */
+
+    /* nav .ul-item.oicon {
+        display: flex;
+    }
+    .menu-icon {
+        display: none;
+    }
+
+    nav .ul-item li .icon {
+        font-size: clamp(1rem,2vw + 1rem, 4rem);
+    } */
+
+
