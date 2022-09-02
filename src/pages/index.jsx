@@ -1,0 +1,6 @@
+export { default as Dashboard } from './Dashboard'
+export { default as About } from './About'
+export { default as Analytics } from './Analytics'
+export { default as Comment } from './Comment'
+export { default as Product } from './Product'
+export { default as ProductList } from './ProductList'
